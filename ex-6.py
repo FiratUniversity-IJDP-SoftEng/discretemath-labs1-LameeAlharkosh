@@ -9,7 +9,7 @@ def is_prime(n):
 pseudoprimes = []
 
 for n in range(3, 10001):
-    if not is_prime(n):  # نتحقق أنه عدد مركب
+    if not is_prime(n):  
         if pow(2, n - 1, n) == 1:
             pseudoprimes.append(n)
 
